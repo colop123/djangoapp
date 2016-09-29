@@ -11,7 +11,7 @@ class Postear(models.Model):
                         blank=True, null=True)
 
     def publicar(self):
-        self.fecha_publicacion = timezone.now()
+        self.fecha_publicacion =timezone.now()
         self.save()
 
     def __str__(self):
